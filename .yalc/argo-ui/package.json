@@ -1,0 +1,60 @@
+{
+    "name": "argo-ui",
+    "version": "1.0.0",
+    "main": "./src/index.ts",
+    "types": "./src/index.ts",
+    "license": "MIT",
+    "files": [
+        "src",
+        "v2",
+        "antd"
+    ],
+    "scripts": {
+        "build": "build-storybook -o ./dist/storybook",
+        "lint": "tslint -p .",
+        "test": "jest",
+        "utils:icons": "rm -f src/assets/fonts/* && node ./scripts/icons/generator.js",
+        "start": "start-storybook -p 6006",
+        "start-v2": "start-storybook -c ./v2/.storybook -s ./v2/.storybook/images -p 6006",
+        "build-v2": "build-storybook -o ./dist/storybook-v2 -c ./v2/.storybook",
+        "start-antd": "start-storybook -c antd/.storybook -s antd/.storybook/images -p 6006",
+        "compile-less-antd": "gulp compileLess"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^6.2.1",
+        "@tippy.js/react": "^3.1.1",
+        "antd": "^5.6.1",
+        "classnames": "^2.2.6",
+        "core-js": "^3.32.1",
+        "foundation-sites": "^6.4.3",
+        "history": "^4.10.1",
+        "moment": "^2.29.4",
+        "moment-timezone": "^0.5.34",
+        "prop-types": "^15.8.1",
+        "react-autocomplete": "1.8.1",
+        "react-form": "^2.16.0",
+        "react-helmet": "^6.1.0",
+        "react-router-dom": "^4.2.2",
+        "react-toastify": "9.0.8",
+        "rxjs": "^7.8.1",
+        "typescript": "^4.9.5",
+        "uuid": "^9.0.0",
+        "xterm": "^4.19.0",
+        "xterm-addon-fit": "^0.5.0"
+    },
+    "peerDependencies": {
+        "@types/react": "^16.8.5",
+        "antd": "^4.16.13",
+        "moment": "^2.29.1",
+        "react": "^16.9.3",
+        "react-dom": "^16.9.3",
+        "rxjs": "^7.8.1"
+    },
+    "resolutions": {
+        "lodash": "4.17.21",
+        "@types/react": "^16.8.5",
+        "@types/node": "14.11.2",
+        "@types/history": "4.7.8"
+    },
+    "yalcSig": "cef1a4f8e416ee85202c3562ec40d7e5"
+}

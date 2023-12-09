@@ -23,6 +23,5 @@
   import { PageWrapper } from '/@/components/Page';
   import WorkbenchHeader from './components/WorkbenchHeader.vue';
   import DetailsForm from './components/DetailsForm.vue';
-  import QuickNav from './components/QuickNav.vue';
   import SiteAnalysis from './components/SiteAnalysis.vue';
 </script>

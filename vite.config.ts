@@ -1,4 +1,6 @@
 import { defineApplicationConfig } from '@vben/vite-config';
+// >= veaury@2.1.1
+import veauryVitePlugins from 'veaury/vite/index.js';
 
 export default defineApplicationConfig({
   overrides: {
@@ -40,3 +42,5 @@ export default defineApplicationConfig({
     },
   },
 });
+
+

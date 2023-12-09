@@ -1,0 +1,9 @@
+{
+  "version": "v1",
+  "packages": {
+    "argo-ui": {
+      "signature": "cef1a4f8e416ee85202c3562ec40d7e5",
+      "file": true
+    }
+  }
+}
